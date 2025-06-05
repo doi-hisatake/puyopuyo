@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ぷよぷよ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        #gameContainer {
+            text-align: center;
+        }
+        
+        #gameBoard {
+            border: 2px solid #fff;
+            background-color: #000;
+            margin: 20px auto;
+        }
+        
+        #score {
+            font-size: 24px;
+            margin: 10px;
+        }
+        
+        #controls {
+            margin: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>ぷよぷよ</h1>
+        <div id="score">スコア: 0</div>
+        <canvas id="gameBoard" width="240" height="480"></canvas>
+        <div id="controls">
+            操作: ←→キー移動, ↓キー高速落下, Zキー回転
+        </div>
+    </div>
+    <script src="puyo.js"></script>
+</body>
+</html>
